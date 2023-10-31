@@ -1,0 +1,182 @@
+#app-login-btn {
+  width: 160px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.body {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  scroll-behavior: smooth;
+}
+
+.container {
+  padding: 0;
+}
+
+.navbar {
+  height: 55px;
+}
+
+.navbar-bg {
+  background-color: #0067A3;
+}
+
+.user-menu {
+  color: white;
+}
+
+.user-menu:hover {
+  color: rgb(197, 197, 197);
+}
+
+.dropdown-toggle[aria-expanded="true"]:after {
+  transform: rotate(180deg);  
+}
+
+.main {
+  min-height: calc(100vh - 110px);
+  background: #0079BF;
+  font-size: 18px;
+  padding: 16px;
+}
+
+.card-body {
+  min-height: 100px;
+  max-height: 29vh;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.card-text:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0 1pt rgb(124, 185, 241);
+}
+
+.task-text-box {
+  width: 100%;
+  resize: none;
+  border: none;
+}
+
+.task-text-box:focus {
+  border: none;
+  outline: none;
+  box-shadow: 0 0 0 2pt rgb(124, 185, 241);
+}
+
+.app-login-btn, #new-user-btn {
+  min-width: 80px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(230, 230, 230);
+  font-weight: 500;
+}
+
+.app-login-btn:hover, #new-user-btn:hover {
+  background-color: rgb(197, 197, 197);
+}
+
+.add-task-btn {
+  color: #5E6C84;
+  width: 100%;
+  text-align: left;
+}
+
+.new-user-form *{
+  margin: 15px 0;
+  max-width: 400px;
+}
+
+.delete-user-form * {
+  margin: 15px 0;
+  max-width: 400px;
+}
+
+.users-list {
+  margin: 15px 0 0 0;
+  padding: 5px 5px 5px 5px;
+  background-color: #EBECF0;
+  border-radius: 5px;
+}
+
+.user-list-item {
+  max-height: 150px;
+  margin: 10px;
+  padding: 3px;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.7);
+  overflow-y: auto;
+}
+
+.hide {
+  display: none;
+}
+.drag-over {
+  border: 1px rgb(145, 143, 143);
+}
+
+.item {
+  border: none;
+  border-radius: 5px;
+  width: 95%;
+  padding: 5%;
+  margin-bottom: 3px;
+  background-color: rgb(112, 111, 111);
+  cursor: pointer;
+  color:white;
+  transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+ 
+}
+
+
+.item:active {
+  cursor: grabbing;
+}
+
+
+.item--hold {
+  background-color: blueviolet;
+}
+
+.card-body--hovered {
+  background-color: rgba(255, 255, 0, 0.2);
+}
+
+.item--hide {
+  display: none;
+}
+
+
+
+
+
+
+.item.dragging {
+  opacity: .5;
+  transform: scale(.8);
+}
+
+.card-body {
+  transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.card-body.drop {
+  border: 2px dashed #FFF;
+}
+
+.card-body.drop article {
+  pointer-events: none;
+}
+
+
+.hold {
+  border: solid 5px #ccc;
+}
+
+.hovered {
+  background: #f4f4f4;
+  border-style: dashed;
+}

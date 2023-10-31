@@ -1,0 +1,26 @@
+<h3 class="page-title">Добавить нового пользователя</h3>
+<section class="user-adding-section">
+    <form class="new-user-form" id="new-user-form">
+        <input class="form-control me-2" name="login"  type="text" placeholder="Придумайте Login"
+            aria-label="Login" required>
+        <input class="form-control me-2" name="password" autocomplete="current-password" type="text"
+            placeholder="Придумайте пароль" aria-label="Password" required>
+        <select class="form-control me-2" name="role">
+            <option value="" selected="selected">Выберите роль: "Admin" или "User"</option>
+            <option value="user">User</option>
+            <option value="admin">Admin</option>
+        </select>
+        <button class="btn btn-light" id="new-user-btn" type="submit">Сохранить</button>
+    </form>
+    
+    <div class="users-list"></div>
+
+    <h3 class="page-title m-1">Удалить пользователя</h3>
+    <form class="delete-user-form" id="delete-user-form">
+        <input class="form-control me-2" name="id"  type="text" placeholder="Введите user id"
+        aria-label="UserID" required>
+        <!-- <input class="form-control me-2" name="user-id"  type="text" placeholder="Введите Password"
+        aria-label="Password" required> -->
+        <button class="btn btn-light" id="delete-user-btn" type="submit">Удалить</button>
+    </form>
+</section>

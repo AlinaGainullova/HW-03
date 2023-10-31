@@ -1,0 +1,61 @@
+  <body>
+    <div class="container-fluid fs-6 mt-3">
+        <div class="row gx-4">
+    <div class="col-3">
+        <div class="rounded-2 p-2 border bg-light">
+        <div class="card-title">Backlog</div>
+        <div class="card-body" id="backlog">
+            
+            <!-- <div class="item" id='item'  draggable="true"></div> -->
+ 
+        </div>
+        <button class="btn add-task-btn add-to-backlog">&plus; Add card</button>
+        <button class="btn add-task-btn submit-btn d-none">Submit</button>
+         </div>
+    </div>
+    <div class="col-3">
+        <div class="rounded-2 p-2 border bg-light">
+        <div class="card-title">Ready</div>
+        <div class="card-body" id="ready" ></div>
+        <div class="dropdown card-dropdown">
+            <button class="btn add-task-btn _dropdown-toggle 
+            dropdown-btn" type="button" id="dropdownMenuButton"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                &plus; Add card
+            </button>
+                <ul class="dropdown-menu card-dropdown-menu" aria-labelledby="dropdownMenuButton"> </ul>
+        </div>
+    </div>
+    </div>
+    <div class="col-3 align-self-start">
+        <div class="rounded-2 p-2 border bg-light">
+        <div class="card-title">In Progress</div>
+        <div class="card-body" id="progress" ></div>
+        <div class="dropdown card-dropdown">
+            <button class="btn add-task-btn _dropdown-toggle dropdown-btn" type="button" id="dropdownMenuButton"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                &plus; Add card
+            </button>
+            <ul class="dropdown-menu card-dropdown-menu" aria-labelledby="dropdownMenuButton">
+            </ul>
+        </div>
+    </div>
+    </div>
+    <div class="col-3">
+        <div class="rounded-2 p-2 border bg-light">
+        <div class="card-title">Finished</div>
+        <div class="card-body" id="finished" ></div>
+        <div class="dropdown card-dropdown">
+            <button class="btn add-task-btn _dropdown-toggle dropdown-btn" type="button" id="dropdownMenuButton"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                &plus; Add card
+            </button>
+            <ul class="dropdown-menu card-dropdown-menu" aria-labelledby="dropdownMenuButton">
+            </ul>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+
+</body>
